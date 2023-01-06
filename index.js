@@ -40,11 +40,15 @@ app.post("/psub",function(req,res)
 })
 app.get("/fproj",function(req,res)
 {
-  res.render("findProj")
+  pd.find({},  function(err,d){
+    res.render("findProj",{deta:d});
+  })
 })
 app.get("/fres",function(req,res)
 {
-  res.render("findResearch")
+  rd.find({},  function(err,d){
+    res.render("findResearch",{deta:d});
+  })
 })
 app.post("/rsub",function(req,res)
 {

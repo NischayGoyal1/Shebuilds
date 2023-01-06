@@ -1,17 +1,18 @@
+
 const mongoose = require('mongoose');
 
-const pdetails = new mongoose.Schema({
-    ProjectName:String,
+ const rdetails = new mongoose.Schema({
+    rt:String,
     college:String,
     Domain:String,
+    prer:String,
     Description:String,
     College_year:String,
-    Github:String,
+    slink:String,
     Name:String,
     Email:String,
     Phn:Number
-  });
-  const pd = mongoose.model('pdetail',pdetails);
-
-module.exports=pd;
+  }); 
+  const pd = mongoose.model('rdetail',rdetails);
+  module.exports=pd;
   

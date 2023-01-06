@@ -66,25 +66,25 @@
         <div class="section-header">
           <h2>Find Research Ideas</h2>
         </div>
-
+        <%deta.forEach(function(ivu){ %>
         <div class="container mt-4">
 
             <div class="jumbotron">
-  <h1 class="display-4">RESEARCH TITLE</h1>
-  <p class="lead"><b> <i>DOMAIN: a simple jumbotron-style</i> </b></p>
-  <p class="lead"><b> <i>Published by: Priya </i> </b></p>
+  <h1 class="display-4"><%=ivu.rt%></h1>
+  <p class="lead"><b> <i>DOMAIN: <%=ivu.Domain%></i> </b></p>
+  <p class="lead"><b> <i>Published by: <%=ivu.Name%></i> </b></p>
   <hr class="my-4">
-  <p>Research description: It uses utility classes for typography and spacing to space content out within the larger container.</p>
+  <p>Research description: <%=ivu.Description%></p>
   
   <div class="lead">
-    <a class="btn btn-primary btn-sm" href="#" role="button">EMAIL</a>
+    <a class="btn btn-primary btn-sm" href="#" role="button"><%=ivu.Email%></a>
    
    
   </div>
 </div>
 
         </div>
-        
+        <%  })%>
 
          
         </div>
